@@ -1,0 +1,48 @@
+/*Type Selectors*/
+h2{
+    color: red;
+    font-size: 30px;
+
+}
+html{
+    font-family: 'Arial',sans-serif;
+    border: 3px solid black;
+}
+a{
+    color: blue;
+    text-decoration: none;
+   
+}
+
+/*Class Selectors*/
+.sport{
+    color: red;
+}
+
+.casual{
+    color: blue;
+}
+.formal{
+    color: brown;
+}
+
+/*ID Selectors*/
+#container{
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+;
+
+}
+/* .sport,.casual{
+    font-size: 20px;
+} */
+
+/* p{
+    background-color: red;
+} */
+/*Descedant styles*/
+/* #container p{
+    background: blue;
+} */
+
