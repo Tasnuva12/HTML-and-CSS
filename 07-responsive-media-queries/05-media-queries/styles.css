@@ -7,3 +7,44 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+@media screen and (min-width: 1100px) {
+  .widescreen {
+    background-color: coral;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .normal {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tablet {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .smartphone {
+    background-color: lightpink;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .landscape {
+    background-color: lightgoldenrodyellow;
+  }
+}
+
+@media screen and (max-height:500px) {
+  .height{
+    background-color: lightgray;
+  }
+}
+
+@media (min-width:768px) and (max-width:9991px){
+body{
+background:#333
+}}
