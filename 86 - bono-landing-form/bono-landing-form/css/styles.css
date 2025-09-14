@@ -83,13 +83,9 @@ body {
 }
 
 
-/*now the wrapper height should be min-height (it will help to  omit the extra space in the bottom of it)
-and this means it's height can be more than 100vh now*/
-
 .form-group{
   margin-bottom: 15px;
 }
-
 .form-group label {
   display: block;
   margin-bottom: 10px;
@@ -109,13 +105,11 @@ and this means it's height can be more than 100vh now*/
   outline :0;
   
 }
-
 .form-group textarea{
   height: 100px;
   resize: none;
   margin-bottom: 10px;
 }
-
 
 .btn{
   display: block;
@@ -136,61 +130,44 @@ and this means it's height can be more than 100vh now*/
 }
 
 .text-container h1{
-  font-size: clamp(1.5rem, 6vw, 3.5rem);
+  font-size:40px;
   margin: 50px 0 20px;
-line-height: 1.4;
-overflow-wrap: normal;
-
- 
- 
-
-  
+  line-height: 1.2;
 }
-
 
 .text-container{
   font-size:18px;
 }
-
-
-/* 
-/*Making it good for mobile screen*/
-
-@media (max-width: 768px){
-  .header,.header.header-right{
-    flex-direction: column;
-    gap:10px;
+@media (max-width:768px){
+  .header{
+    padding: 30px 10px 10px;
   }
+  .header,.header .header-right{
+    flex-direction: column;
+    gap:10;
+  }
+  .main-content{
+    flex-direction: column-reverse;
+    justify-content: start;
+    margin: auto;
+    padding: 50px;
 
-} 
-.header 
-.main-content{
-  flex-direction: column-reverse;
-  justify-content: center;
-  margin: auto;
-  padding: 50px;
 
+
+  }
+  .main-content form , .main-content .text-container{
+    width: 100%;
+  }
+  .main-content h1 {
+    font-size:40px;
+    text-align: center;
+    line-height: 1.4;
+
+  }
+   
 }
 
-.main-content form, .main-content .text-container {
-  width: 100%;
-}
 
-
-.main-content h1 {
-  font-size: 40px;
-  text-align: center;
-  line-height: 1.4px;
-}
-
-.header {
-  padding: 30px 10px 10px;
-
-} */
-
-
-/*for landscape */
-/* 
 @media (max-height:500px){
   .main-content{
     margin:0 auto
@@ -198,11 +175,7 @@ overflow-wrap: normal;
   .main-content h1{
     font-size: 40px;
   }
-} */
-
-
-
-
+}
 
 
 
