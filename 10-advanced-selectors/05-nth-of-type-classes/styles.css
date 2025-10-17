@@ -1,0 +1,48 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/*  Style the first li of it's parent */
+li:first-of-type {
+  color: blue;
+}
+
+
+/*  Style the last li of it's parent */
+li:last-of-type {
+  color: green;
+}
+
+/*  Style the 3rd item */
+li:nth-of-type(3) {
+  color: red;
+}
+
+/*  Style the 6th item */
+li:nth-of-type(6) {
+  color: orange;
+}
+
+/*  Style the even items */
+li:nth-of-type(even) {
+  background-color: aquamarine;
+}
+
+/*  Style the odd items */
+li:nth-of-type(odd) {
+  background-color: lightgray;
+}
+
+/* nth-of-type vs nth-child */
+li:nth-child(3) {
+  font-weight: bold;
+}
+
+
+
+/* Using pseudo classes with pseudo elements */
+li:nth-of-type(2)::after {
+  content: ' - This is the second item';
+  font-style: italic;
+  color: purple;
+}
