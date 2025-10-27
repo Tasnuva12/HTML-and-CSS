@@ -6,7 +6,7 @@
 
 html,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 1.6;
   scroll-behavior: smooth;
@@ -75,12 +75,38 @@ img {
 
 /* 1. Make the background color for the first paragraph in all sections lightyellow */
 
+.section p:first-of-type {
+  background: lightyellow;
+}
 /* 2. Alternate background colors for all lis #eee and #ddd */
-
+.section ul li:nth-child(odd) {
+  background: #eee;
+}
+.section ul li:nth-child(even) {
+  background: #ddd;
+}
 /* 3. Make the background #f4f4f4 and the padding 20px for all sections that have an image */
+.section:has(img) {
+  background: #f4f4f4;
+  padding: 20px;
+}
 
 /* 4. Make the first paragraph after a ul have the background #333, text color #fff and padding of 20px  */
+ul + p {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
 
 /* 5. Make the color of any links that start with http:// or https:// red  */
+a[href^="http://"],
+a[href^="https://"] {
+  color: red;
+}
 
 /* 6. Make the first link in the first paragraph and the second paragraph of the second section bold */
+.section:nth-of-type(2) p:nth-of-type(2) a:nth-of-type(1),
+.section:nth-of-type(1) p:nth-of-type(1) a:nth-of-type(1) {
+  font-weight: bold;
+}
+ 

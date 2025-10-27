@@ -1,3 +1,4 @@
+
 *,
 *:before,
 *:after {
@@ -14,3 +15,37 @@ body {
   max-width: 600px;
   margin: 30px auto;
 }
+
+.container h1,
+.container h2,
+.container p{
+  color: red;
+}
+
+.container :is(h1,h2,p){
+  color:blue;
+  a:is(:hover,:focus){
+    background-color: pink;
+  }
+}
+
+.container :where(h1,h2,p){
+  color:green;
+  a:is(:hover,:focus){
+    background-color: pink;
+  }
+} */
+
+/*where has lower specificity than the is() and normal delcaration
+
+
+.container:has(h1 span){
+  color:red;
+}
+
+h1:has(+ h2){
+  color:pink;
+}
+
+
+
